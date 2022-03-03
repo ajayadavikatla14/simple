@@ -1,19 +1,16 @@
 import React from 'react'
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
-import Home from './RouterProject/Home'
-import Dashboard from './RouterProject/Dashboard'
-import About from './RouterProject/About'
-import Pagenotfound from './RouterProject/Pagenotfound'
+import Edit from './Form_Project/Edit'
+import Register from './Form_Project/Register'
+    
 
 const App = () => {
   return (
     <>
         <BrowserRouter>
         <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/dashboard/:name' element={<Dashboard /> } />
-            <Route path='/about' element={<About /> } />
-            <Route path='*' element={<Pagenotfound />} />
+            <Route path='/' element={ <Register />}  />
+            <Route path='/edit' element={ <Edit />} />
         </Routes>
         </BrowserRouter>
     </>
